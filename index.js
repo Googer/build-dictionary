@@ -15,6 +15,7 @@ fs.writeFileSync('eng.user-words',
 		.concat(require('./pokemon')
 			.map(pokemon => pokemon.name)
 			.filter(name => name !== undefined)
+			.map(name => name.replace('_', ' '))
 			.map(pokemon_name => `${pokemon_name.charAt(0).toUpperCase()}${pokemon_name.slice(1)}`)))]
 		.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
 		.join('\n')

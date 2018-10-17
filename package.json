@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "PgP-Data": "github:Googer/PgP-Data",
-    "he": "^1.1.1"
+    "he": "^1.2.0"
   },
   "scripts": {
     "start": "node index.js",
